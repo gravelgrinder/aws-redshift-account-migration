@@ -22,7 +22,7 @@ Demo stepping through migrating an Amazon Redshift cluster to another account (w
 9. Revoke access to the Source account on the Target account KMS key. ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/08-architecture-diagram.png?raw=true)
 
 
-# Questions
+## Questions
 1. What is the expense (time, money) of re-encyrpting a RS Cluster?  (Cluster sizes anywhere between 30TB and 120TB)
 
 ## Alternative Migration Approaches to Consider
