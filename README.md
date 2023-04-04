@@ -6,20 +6,20 @@ Demo stepping through migrating an Amazon Redshift cluster to another account (w
  * Source cluster KMS key cannot be shared with the target account.
 
 ## Architecture
-![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/architecture-steps.png?raw=true)
+![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/architecture-steps.gif?raw=true)
 
 ## Prerequisites
 1. Create KMS Key in Source Account
-2. Create Source Redshift cluster, add custom data and encrypt it with the KMS key in step #1.
+2. Create Source Redshift cluster, add custom data and encrypt it with the KMS key in step #1. ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/01-architecture-diagram.png?raw=true)
 
 ## Steps
-3. Create KMS Key in target account and share it with the Source Account.
-4. Disable Encryption from Source Cluster
-5. Re-encyrpt the Source Redshift cluster with Target KMS key.
-6. Take Snapshot of Source Redshift Cluster
-7. Share Snapshot with Target account (758373647921).
-8. In target account, restore Snapshot to Cluster.
-9. Revoke access to the Source account on the Target account KMS key.
+3. Create KMS Key in target account and share it with the Source Account. ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/02-architecture-diagram.png?raw=true)
+4. Disable Encryption from Source Cluster ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/03-architecture-diagram.png?raw=true)
+5. Re-encyrpt the Source Redshift cluster with Target KMS key. ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/04-architecture-diagram.png?raw=true)
+6. Take Snapshot of Source Redshift Cluster ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/05-architecture-diagram.png?raw=true)
+7. Share Snapshot with Target account (758373647921). ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/06-architecture-diagram.png?raw=true)
+8. In target account, restore Snapshot to Cluster. ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/07-architecture-diagram.png?raw=true)
+9. Revoke access to the Source account on the Target account KMS key. ![alt text](https://github.com/gravelgrinder/aws-redshift-account-migration/blob/main/images/08-architecture-diagram.png?raw=true)
 
 
 # Questions
