@@ -26,5 +26,8 @@ Demo stepping through migrating an Amazon Redshift cluster to another account (w
 1. What is the expense (time, money) of re-encyrpting a RS Cluster?  (Cluster sizes anywhere between 30TB and 120TB)
 
 ## Alternative Migration Approaches to Consider
- * UNLOAD/RELOAD Data within Cluster. [Documentation - Redshift Unloading Data](https://docs.aws.amazon.com/redshift/latest/dg/c_unloading_data.html)
- * Account Ownership Transfer [re:Post - How to transfer my AWS account to another person or business](https://repost.aws/knowledge-center/transfer-aws-account) [re:Post - How do I move accounts between organizations in AWS Organizations](https://repost.aws/knowledge-center/organizations-move-accounts)
+* UNLOAD/RELOAD Data within Cluster
+  * [Documentation - Redshift Unloading Data](https://docs.aws.amazon.com/redshift/latest/dg/c_unloading_data.html)
+* Account Ownership Transfer 
+  * [re:Post - How to transfer my AWS account to another person or business](https://repost.aws/knowledge-center/transfer-aws-account)
+  * [re:Post - How do I move accounts between organizations in AWS Organizations](https://repost.aws/knowledge-center/organizations-move-accounts)
