@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowUseOfKeyInTargetAccount",
+            "Effect": "Allow",
+            "Action": [
+                "kms:Decrypt",
+                "kms:Encrypt",
+                "kms:GenerateDataKey",
+                "kms:ReEncryptTo",
+                "kms:GenerateDataKeyWithoutPlaintext",
+                "kms:DescribeKey",
+                "kms:GenerateDataKeyPairWithoutPlaintext",
+                "kms:GenerateDataKeyPair",
+                "kms:ReEncryptFrom"
+            ],
+            "Resource": "arn:aws:kms:us-east-1:758373647921:key/58a149ec-c235-4b1f-9d01-d25dcbe883f1"
+        }
+    ]
+}
