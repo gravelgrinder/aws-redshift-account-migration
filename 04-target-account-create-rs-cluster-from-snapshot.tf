@@ -17,4 +17,5 @@ resource "aws_redshift_cluster" "target" {
   cluster_subnet_group_name = "cluster-subnet-group-1"
   availability_zone_relocation_enabled = false
   availability_zone = "us-east-1a"
+  skip_final_snapshot = "true"
 }

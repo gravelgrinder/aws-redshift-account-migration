@@ -19,7 +19,7 @@ resource "aws_redshift_cluster" "source" {
   cluster_subnet_group_name = "djl-rs-connect-subnetgroup"
   availability_zone_relocation_enabled = false
   availability_zone = "us-east-1a"
-
+  skip_final_snapshot = "true"
 }
 
 
